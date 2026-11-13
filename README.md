@@ -15,7 +15,7 @@ A Chrome and Dia extension that reframes regular YouTube videos for a portrait m
 5. Open or refresh a regular YouTube video.
 6. Move your browser to your portrait monitor and click **Vertical mode** beside the fullscreen button.
 
-On narrow players, look for the portrait-screen icon. Its tooltip and accessible name remain **Vertical mode**. No build, dependency installation, or API setup is required to run the extension. This release is distributed through GitHub; it is not listed in the Chrome Web Store.
+On narrow players, look for the portrait-screen icon. Its tooltip and accessible name remain **Vertical mode**. No build, dependency installation, or API setup is required to run the extension. Version 1.1.0 was submitted to Chrome Web Store on November 13, 2026 and is pending review, with automatic publication after approval enabled. Until the store listing is available, install the GitHub release ZIP using the steps above.
 
 ## Find your frame
 

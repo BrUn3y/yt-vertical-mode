@@ -79,4 +79,17 @@ No login or paid account is required by the extension. Open a publicly available
 
 ## Publication status
 
-This file contains prepared listing copy. Its existence does not indicate that Google has accepted, reviewed, or published the extension. Check the developer dashboard for the actual status.
+Version **1.1.0** was submitted to Chrome Web Store for review on **November 13, 2026**. The developer dashboard confirmed **Pending review**. Automatic publication after approval is enabled.
+
+- Extension ID: `hkainbpeaingdppjacdlkgkginepbbnp`
+- Visibility: Public
+- Distribution: All regions
+- Price: Free
+- Listing language: English (United States)
+- Uploaded assets: 128 × 128 icon, two 1280 × 800 screenshots, and a 440 × 280 promotional image.
+
+Google's review and approval are pending. Until the store listing is available, users can install the GitHub release ZIP using the website's guide.
+
+## Store artwork
+
+The files in `assets/` are ready for upload. `generate-assets.py` recreates them with Python and Pillow using the genuine extension screenshots in `sources/`. The player screenshot uses this repository's original local demonstration video.
