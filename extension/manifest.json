@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Vertical Mode",
+  "version": "1.1.0",
+  "description": "Your YouTube videos, reframed for a portrait monitor. Fill your screen and adjust the crop without stretching the picture.",
+  "minimum_chrome_version": "109",
+  "permissions": [
+    "storage"
+  ],
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_title": "YouTube Vertical Mode",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*",
+        "https://youtube.com/*",
+        "https://www.youtube-nocookie.com/embed/*"
+      ],
+      "js": [
+        "geometry.js",
+        "ui.js",
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ],
+  "homepage_url": "https://brun3y.github.io/yt-vertical-mode/"
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vertical Mode · Test player</title>
+  <link rel="stylesheet" href="/extension/content.css">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; color: #eee; background: #10120f; font: 15px/1.6 system-ui; }
+    main { max-width: 1080px; margin: 50px auto; padding: 20px; }
+    .label { color: #c0ef8b; font-size: 11px; letter-spacing: 2px; }
+    h1 { font-size: 30px; letter-spacing: -1px; }
+    p { color: #9da694; }
+    #movie_player { width: 100%; aspect-ratio: 16 / 9; position: relative; background: #000; overflow: hidden; }
+    .html5-video-container, .html5-main-video { position: absolute; width: 100%; height: 100%; }
+    .ytp-chrome-bottom { position: absolute; bottom: 0; left: 12px; width: calc(100% - 24px); height: 55px; z-index: 60; border-top: 3px solid #a7cf73; }
+    .ytp-right-controls { float: right; display: flex; height: 48px; }
+    .ytp-button { color: #fff; background: transparent; border: 0; cursor: pointer; font-size: 18px; height: 48px; padding: 0 10px; }
+    .ytp-gradient-bottom { position: absolute; bottom: 0; height: 100px; width: 100%; background: linear-gradient(transparent, #000a); z-index: 50; pointer-events: none; }
+    .ytp-left-controls { display: flex; align-items: center; float: left; height: 48px; font-size: 12px; }
+    a { color: #c0ef8b; }
+  </style>
+  <script src="/tests/fixture.js" defer></script>
+  <script src="/extension/geometry.js" defer></script>
+  <script src="/extension/ui.js" defer></script>
+  <script src="/extension/content.js" defer></script>
+</head>
+<body>
+  <main>
+    <div class="label">VERTICAL MODE / LOCAL PREVIEW</div>
+    <h1>Same video. A different perspective.</h1>
+    <p>This local preview reproduces the YouTube controls structure. Click Vertical mode.</p>
+    <div id="movie_player" tabindex="-1">
+      <div class="html5-video-container"><video class="html5-main-video" autoplay muted playsinline></video></div>
+      <div class="ytp-gradient-bottom"></div>
+      <div class="ytp-chrome-bottom">
+        <div class="ytp-left-controls"><button class="ytp-button" id="play" aria-label="Pause">Ⅱ</button><span>0:24 / LIVE</span></div>
+        <div class="ytp-right-controls"><button class="ytp-button" aria-label="Settings">⚙</button><div class="ytp-controls-group"><button class="ytp-button ytp-fullscreen-button" aria-label="Fullscreen">⛶</button></div></div>
+      </div>
+    </div>
+    <p>The test image marks the left, center, and right to help you check the frame.</p>
+    <a href="/extension/popup.html">View the extension popup ↗</a>
+  </main>
+</body>
+</html>

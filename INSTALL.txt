@@ -1,0 +1,54 @@
+VERTICAL MODE / VERSION 1.1.0
+A different perspective for your portrait monitor.
+
+INSTALL IN CHROME OR DIA
+
+1. Unzip the download into a folder you will keep.
+2. Open chrome://extensions in Chrome, or dia://extensions in Dia.
+3. Turn on Developer mode.
+4. Click Load unpacked.
+5. Select the extracted folder containing manifest.json.
+   In a source checkout, select the extension folder instead.
+6. Open or refresh a regular YouTube video.
+7. Click Vertical mode beside the fullscreen control.
+
+Move your browser to your portrait monitor before entering fullscreen.
+Configure the monitor's portrait orientation in your operating system.
+
+FIND YOUR FRAME
+
+- Adjust framing: opens the panel at the top right of the player.
+- Fill screen: fills the monitor while cropping the sides.
+- Full video: shows the entire picture, with letterboxing when needed.
+- Crop: blends between Full video and Fill screen without distortion.
+- Horizontal framing: chooses which part of the picture stays visible.
+- Reset framing: returns to a centered, filled screen.
+- Escape, the X button, or Vertical mode again: exits the mode.
+- Alt + Shift + V: toggles Vertical mode. Use Option on Mac.
+
+On narrow players, the button shows a portrait-screen icon; its tooltip
+and accessible label still say Vertical mode.
+
+The extension popup enables the mode inside the window. To go directly
+to fullscreen, use the button inside the YouTube player. If fullscreen
+is blocked, you can also use YouTube's native fullscreen control.
+
+UPDATE
+
+Replace your extracted files with the new release. Click Reload in the
+extensions manager, then refresh YouTube. Keep the extracted folder;
+the browser loads the extension directly from it.
+
+PRIVACY AND LIMITS
+
+Only your crop and framing settings are saved locally. No account,
+server, API key, analytics, or extension network requests are involved.
+The picture is scaled and cropped, never stretched or rotated. The
+extension does not follow people or remove black bars baked into a video.
+Shorts and the miniplayer are outside this release's scope.
+
+WEBSITE
+https://brun3y.github.io/yt-vertical-mode/
+
+SOURCE AND RELEASES
+https://github.com/BrUn3y/yt-vertical-mode

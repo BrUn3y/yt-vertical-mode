@@ -1,0 +1,77 @@
+.ytp-right-controls .ytvm-button.ytp-button {
+  width: auto !important;
+  min-width: 38px;
+  padding: 0 9px !important;
+  vertical-align: top;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  color: #fff;
+}
+
+.ytvm-button svg { width: 21px; height: 24px; flex: none; }
+.ytvm-button .ytvm-button-label { font: 600 12px/1 Arial, sans-serif; white-space: nowrap; }
+.ytvm-button[aria-pressed="true"] { color: #a9c9ff !important; }
+.ytvm-button:focus-visible { outline: 2px solid #a9c9ff; outline-offset: -3px; }
+
+html.ytvm-active, html.ytvm-active body { overflow: hidden !important; }
+
+#movie_player[data-ytvm-active="true"] {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  max-width: none !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  z-index: 2147483646 !important;
+  background: #000 !important;
+  overflow: hidden !important;
+  border-radius: 0 !important;
+}
+
+#movie_player[data-ytvm-active="true"] .html5-video-container {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden !important;
+}
+
+#movie_player[data-ytvm-active="true"] video.html5-main-video {
+  position: absolute !important;
+  width: var(--ytvm-width, 100%) !important;
+  height: var(--ytvm-height, 100%) !important;
+  left: var(--ytvm-left, 0px) !important;
+  top: var(--ytvm-top, 0px) !important;
+  max-width: none !important;
+  max-height: none !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  transform: none !important;
+  object-fit: contain !important;
+}
+
+#movie_player[data-ytvm-active="true"] .ytp-chrome-bottom {
+  width: calc(100% - 48px) !important;
+  left: 24px !important;
+}
+
+#movie_player[data-ytvm-active="true"] .ytp-gradient-bottom { width: 100% !important; }
+
+#movie_player > .ytvm-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 70;
+  display: none;
+}
+
+#movie_player[data-ytvm-active="true"] > .ytvm-overlay { display: block; }
+
+@media (max-width: 850px) {
+  .ytvm-button .ytvm-button-label { display: none; }
+}
