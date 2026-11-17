@@ -4,9 +4,17 @@
 
 A Chrome and Dia extension that reframes regular YouTube videos for a portrait monitor. Fill your screen, choose the crop, and move the frame without stretching the picture.
 
-[Website & interactive demo](https://brun3y.github.io/yt-vertical-mode/) · [Download the latest ZIP](https://github.com/BrUn3y/yt-vertical-mode/releases/latest/download/youtube-vertical-mode.zip) · [Release notes](https://github.com/BrUn3y/yt-vertical-mode/releases)
+[Add to Chrome](https://chromewebstore.google.com/detail/youtube-vertical-mode/hkainbpeaingdppjacdlkgkginepbbnp?hl=es) · [Website & interactive demo](https://brun3y.github.io/yt-vertical-mode/) · [Download the latest ZIP](https://github.com/BrUn3y/yt-vertical-mode/releases/latest/download/youtube-vertical-mode.zip) · [Release notes](https://github.com/BrUn3y/yt-vertical-mode/releases)
 
 ## Install
+
+1. Open [Vertical Mode on Chrome Web Store](https://chromewebstore.google.com/detail/youtube-vertical-mode/hkainbpeaingdppjacdlkgkginepbbnp?hl=es), click **Add to Chrome**, and confirm **Add extension**.
+2. Open or refresh a regular YouTube video.
+3. Move your browser to your portrait monitor and click **Vertical mode** beside the fullscreen button.
+
+On narrow players, look for the portrait-screen icon. Its tooltip and accessible name remain **Vertical mode**. No build, dependency installation, or API setup is required to run the extension.
+
+### Manual installation
 
 1. Download the latest release ZIP and extract it into a folder you will keep.
 2. Open `chrome://extensions` in Chrome or `dia://extensions` in Dia.
@@ -14,8 +22,6 @@ A Chrome and Dia extension that reframes regular YouTube videos for a portrait m
 4. Select the extracted folder containing `manifest.json`. If you cloned this repository, select the [`extension`](extension) folder.
 5. Open or refresh a regular YouTube video.
 6. Move your browser to your portrait monitor and click **Vertical mode** beside the fullscreen button.
-
-On narrow players, look for the portrait-screen icon. Its tooltip and accessible name remain **Vertical mode**. No build, dependency installation, or API setup is required to run the extension. Version 1.1.0 was submitted to Chrome Web Store on November 13, 2026 and is pending review, with automatic publication after approval enabled. Until the store listing is available, install the GitHub release ZIP using the steps above.
 
 ## Find your frame
 
@@ -49,7 +55,7 @@ YouTube changes its interface regularly. The extension observes player changes, 
 
 ## Privacy
 
-Manifest V3. The only requested permission is `storage`, used to save two numbers: crop and horizontal position. Content scripts run only on the YouTube domains listed in the manifest. The extension makes no network requests and includes no analytics, accounts, tracking, or remote services. The website also has no analytics or third-party dependencies. Download and source links go to GitHub.
+Manifest V3. The only requested permission is `storage`, used to save two numbers: crop and horizontal position. Content scripts run only on the YouTube domains listed in the manifest. The extension makes no network requests and includes no analytics, accounts, tracking, or remote services. The website also has no analytics or third-party dependencies. Installation links go to Chrome Web Store; manual downloads and source links go to GitHub.
 
 ## Development
 
